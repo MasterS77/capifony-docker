@@ -20,18 +20,3 @@ capifony is a deployment recipes collection that works with both [symfony](http:
         mjanser/capifony
 
 This runs capifony in the current directory and forwards the SSH authentication socket. All followed parameters are passed to capifony.
-
-## Install script
-
-For simplicity you can install a script inside you PATH, for example in `/usr/local/bin/cap`, which executes the above command.
-You can use the script at [https://github.com/mjanser/capifony-docker/cap.sh](https://github.com/mjanser/capifony-docker/cap.sh) for this.
-
-# User Feedback
-
-## Issues
-
-If you have any problems with or questions about this image, please create a [GitHub issue](https://github.com/mjanser/capifony-docker/issues).
-
-## Contributing
-
-You are invited to contribute new features, fixes, or updates. Just fork the repository and create a pull request.
