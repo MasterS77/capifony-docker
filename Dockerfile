@@ -1,12 +1,13 @@
 FROM debian:jessie
 
-MAINTAINER Martin Janser <martin@duss-janser.ch>
+MAINTAINER Master_S
 
 RUN apt-get update && apt-get install -y rubygems git
 RUN gem install capifony -v 2.8.3
+RUN useradd -r -u 1000 appuser
+USER appuser
+ENV SSH_AUTH_SOCK /home/appuser/ssh-agent
 
-ENV SSH_AUTH_SOCK /root/ssh-agent
-
-WORKDIR /root/workdir
+WORKDIR /home/appuser/workdir
 
 ENTRYPOINT ["cap"]
